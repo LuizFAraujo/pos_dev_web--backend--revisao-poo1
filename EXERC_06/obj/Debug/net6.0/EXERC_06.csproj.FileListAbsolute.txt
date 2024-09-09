@@ -27,3 +27,18 @@ I:\@ POS\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\_ ATIVIDADE\01\pos_dev_we
 I:\@ POS\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\_ ATIVIDADE\01\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.pdb
 I:\@ POS\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\_ ATIVIDADE\01\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.genruntimeconfig.cache
 I:\@ POS\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\_ ATIVIDADE\01\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\ref\EXERC_06.dll
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\bin\Debug\net6.0\EXERC_06.exe
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\bin\Debug\net6.0\EXERC_06.deps.json
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\bin\Debug\net6.0\EXERC_06.runtimeconfig.json
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\bin\Debug\net6.0\EXERC_06.dll
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\bin\Debug\net6.0\EXERC_06.pdb
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.GeneratedMSBuildEditorConfig.editorconfig
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.AssemblyInfoInputs.cache
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.AssemblyInfo.cs
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.csproj.CoreCompileInputs.cache
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.sourcelink.json
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.dll
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\refint\EXERC_06.dll
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.pdb
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\EXERC_06.genruntimeconfig.cache
+D:\@POS\back L1\pos_dev_web--backend--revisao-poo1\EXERC_06\obj\Debug\net6.0\ref\EXERC_06.dll

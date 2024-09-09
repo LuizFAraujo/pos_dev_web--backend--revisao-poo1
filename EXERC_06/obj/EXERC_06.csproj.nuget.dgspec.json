@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "I:\\@ POS\\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\\_ ATIVIDADE\\01\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj": {}
+    "D:\\@POS\\back L1\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj": {}
   },
   "projects": {
-    "I:\\@ POS\\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\\_ ATIVIDADE\\01\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj": {
+    "D:\\@POS\\back L1\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\@ POS\\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\\_ ATIVIDADE\\01\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj",
+        "projectUniqueName": "D:\\@POS\\back L1\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj",
         "projectName": "EXERC_06",
-        "projectPath": "I:\\@ POS\\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\\_ ATIVIDADE\\01\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj",
+        "projectPath": "D:\\@POS\\back L1\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\EXERC_06.csproj",
         "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-        "outputPath": "I:\\@ POS\\2024.09 - D2DBE - DESENVOLVIMENTO BACK-END II\\_ ATIVIDADE\\01\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\obj\\",
+        "outputPath": "D:\\@POS\\back L1\\pos_dev_web--backend--revisao-poo1\\EXERC_06\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
