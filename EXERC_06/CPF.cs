@@ -1,60 +1,75 @@
 using System.Text.RegularExpressions;
 
-namespace CPF_Utils;
-
-public class CPF
+namespace CPF_Utils
 {
-    private string cpf = "";
-    private bool isCpfOk;
-
-    public string NumCPF { get { return cpf; } set { cpf = value; } }
-    public bool IsCpfOk { get { return isCpfOk; } set { isCpfOk = value; } }
-
-
-    public bool ValidarCPF(string cpf, bool byRegex = true)
+    public class CPF
     {
-        // Remove caracteres não numéricos
-        cpf = new string(cpf.Where(char.IsDigit).ToArray());
+        private string cpf = string.Empty;
+        private bool isCpfOk;
 
-        // Verificar se o CPF possui 11 dígitos
-        if (cpf.Length != 11) return false;
-
-        if (byRegex)
+        public string NumCPF
         {
-            // Cria o padrão regex para o CPF
-            string pattern = @"^(\d{3})(\d{3})(\d{3})(\d{2})$";
-
-            // Verifica se o CPF não corresponde ao padrão
-            if (!Regex.IsMatch(cpf, pattern)) return false;
+            get => cpf;
+            set => cpf = value;
         }
 
-        // Calcular os dígitos verificadores
-        int soma = 0;
-        int peso = 10;
-
-        for (int i = 0; i < 9; i++)
+        public bool IsCpfOk
         {
-            soma += int.Parse(cpf[i].ToString()) * peso;
-            peso--;
+            get => isCpfOk;
+            set => isCpfOk = value;
         }
 
-        int digito1 = 11 - (soma % 11);
-        if (digito1 > 9) digito1 = 0;
-
-        soma = 0;
-        peso = 11;
-
-        for (int i = 0; i < 10; i++)
+        public bool ValidarCPF(string cpf, bool useRegex = true)
         {
-            soma += int.Parse(cpf[i].ToString()) * peso;
-            peso--;
+            string cleanedCpf = CleanCpf(cpf);
+
+            if (!IsLengthValid(cleanedCpf))
+                return false;
+
+            if (useRegex && !IsFormatValid(cleanedCpf))
+                return false;
+
+            return AreDigitsValid(cleanedCpf);
         }
 
-        int digito2 = 11 - (soma % 11);
-        if (digito2 > 9) digito2 = 0;
+        private string CleanCpf(string cpf)
+        {
+            return new string(cpf.Where(char.IsDigit).ToArray());
+        }
 
-        // Verificar se os dígitos calculados são iguais aos dígitos informados
-        return cpf.EndsWith(digito1.ToString() + digito2.ToString());
+        private bool IsLengthValid(string cpf)
+        {
+            return cpf.Length == 11;
+        }
+
+        private bool IsFormatValid(string cpf)
+        {
+            string pattern = @"^\d{11}$";
+            return Regex.IsMatch(cpf, pattern);
+        }
+
+        private bool AreDigitsValid(string cpf)
+        {
+            int firstDigit = CalculateDigit(cpf, 10);
+            int secondDigit = CalculateDigit(cpf, 11);
+
+            string calculatedDigits = $"{firstDigit}{secondDigit}";
+
+            return cpf.EndsWith(calculatedDigits);
+        }
+
+        private int CalculateDigit(string cpf, int weight)
+        {
+            int sum = 0;
+
+            for (int i = 0; i < cpf.Length - 1; i++)
+            {
+                sum += int.Parse(cpf[i].ToString()) * weight;
+                weight--;
+            }
+
+            int digit = 11 - (sum % 11);
+            return digit > 9 ? 0 : digit;
+        }
     }
-
 }
